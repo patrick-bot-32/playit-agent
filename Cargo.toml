@@ -5,6 +5,7 @@ members = [
     "packages/agent_proto",
     "packages/api_client",
     "packages/ping_monitor",
+    "packages/windows_service",
 ]
 
 [workspace.package]
@@ -29,6 +30,7 @@ chrono = { version = "0.4", features = ["serde"] }
 futures-util = "0.3"
 message-encoding = "0.2.2"
 dirs = "5.0.1"
+webbrowser = "0.8"
 
 [profile.release]
 strip = "debuginfo"

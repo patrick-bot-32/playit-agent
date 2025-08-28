@@ -1,0 +1,21 @@
+[package]
+name = "playit-windows-service"
+version.workspace = true
+edition = "2021"
+authors = ["Patrick Lorio <patrick@playit.gg>"]
+description = "Windows service wrapper for Playit agent"
+repository = "https://github.com/playit-cloud/playit-agent"
+
+[dependencies]
+tracing = { workspace = true }
+tokio = { workspace = true }
+serde = { workspace = true }
+toml = { workspace = true }
+dirs = { workspace = true }
+webbrowser = { workspace = true }
+playit-agent-core = { path = "../agent_core" }
+playit-api-client = { path = "../api_client" }
+
+[target.'cfg(windows)'.dependencies]
+windows-service = "0.6"
+tray-icon = "0.8"
