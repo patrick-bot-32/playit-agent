@@ -1,0 +1,12 @@
+[package]
+name = "playit-agent-frontend"
+version.workspace = true
+edition = "2021"
+description = "CLI frontend for controlling the playit agent service"
+license = "BSD-2-Clause"
+repository = "https://github.com/playit-cloud/playit-agent"
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+playit-agent-service-common = { path = "../agent_service_common" }
+tokio = { workspace = true }

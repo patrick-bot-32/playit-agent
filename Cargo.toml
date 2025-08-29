@@ -5,6 +5,9 @@ members = [
     "packages/agent_proto",
     "packages/api_client",
     "packages/ping_monitor",
+    "packages/agent_service",
+    "packages/agent_service_common",
+    "packages/agent_frontend",
 ]
 
 [workspace.package]

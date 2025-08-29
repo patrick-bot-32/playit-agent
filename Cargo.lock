@@ -1153,6 +1153,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "playit-agent-frontend"
+version = "0.16.2"
+dependencies = [
+ "clap",
+ "playit-agent-service-common",
+ "tokio",
+]
+
+[[package]]
 name = "playit-agent-proto"
 version = "1.3.0"
 dependencies = [
@@ -1163,6 +1172,26 @@ dependencies = [
  "rand 0.8.5",
  "serde",
  "sha2",
+]
+
+[[package]]
+name = "playit-agent-service"
+version = "0.16.2"
+dependencies = [
+ "playit-agent-core",
+ "playit-agent-service-common",
+ "serde_json",
+ "tokio",
+ "tracing",
+]
+
+[[package]]
+name = "playit-agent-service-common"
+version = "0.16.2"
+dependencies = [
+ "serde",
+ "serde_json",
+ "tokio",
 ]
 
 [[package]]
