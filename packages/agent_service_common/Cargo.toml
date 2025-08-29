@@ -1,0 +1,12 @@
+[package]
+name = "playit-agent-service-common"
+version.workspace = true
+edition = "2021"
+description = "Shared types for playit agent service communication"
+license = "BSD-2-Clause"
+repository = "https://github.com/playit-cloud/playit-agent"
+
+[dependencies]
+serde = { workspace = true }
+serde_json = { workspace = true }
+tokio = { workspace = true }

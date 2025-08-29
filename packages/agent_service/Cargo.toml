@@ -1,0 +1,14 @@
+[package]
+name = "playit-agent-service"
+version.workspace = true
+edition = "2021"
+description = "Runs the playit agent core as a background service"
+license = "BSD-2-Clause"
+repository = "https://github.com/playit-cloud/playit-agent"
+
+[dependencies]
+playit-agent-core = { path = "../agent_core" }
+playit-agent-service-common = { path = "../agent_service_common" }
+tokio = { workspace = true }
+serde_json = { workspace = true }
+tracing = { workspace = true }
